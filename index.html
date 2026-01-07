@@ -246,6 +246,7 @@
             .hero-title { font-size: 3rem; }
             .grid-3 { grid-template-columns: 1fr; }
         }
+        
     </style>
 </head>
 <body>
@@ -285,19 +286,44 @@
     </section>
 
     <section id="about">
+        
+        <div class="grid-3">
+            <section id="about">
         <h2 class="section-title reveal">Qui suis-je ?</h2>
         <div class="grid-3">
             <div class="card reveal" style="grid-column: span 3;">
-                <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                <h3>Mon Engagement Tech et Académique</h3>
-                <p style="margin-top: 10px;">
-                    Passionné par l'informatique et les nouvelles technologies, je m'appelle Idriss Ahouari, j'ai 19 ans et je suis actuellement étudiant en <strong>BTS SIO option SISR</strong>. 
-                    Mon objectif est de devenir un expert en gestion d'infrastructures réseaux et en sécurisation des données. Curieux et rigoureux, j'aime comprendre comment les systèmes communiquent entre eux et comment optimiser leur performance. À travers ce portfolio, je vous invite à découvrir mon univers technique, allant de la configuration de serveurs à la mise en place de réseaux sécurisés
+                <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                <h3>Mon Profil & Parcours Scolaire</h3>
+                <p style="margin-top: 10px; margin-bottom: 30px;">
+                    Passionné par l'informatique et les nouvelles technologies, je m'appelle Idriss Ahouari, j'ai 19 ans. Mon objectif est de devenir un expert en gestion d'infrastructures réseaux et en sécurisation des données.
                 </p>
-                <p style="margin-top: 15px;">
-                 
-                </p>
-                <div class="tag-container">
+                
+                <div class="education-timeline" style="position: relative; padding-left: 30px; border-left: 2px solid var(--accent-cyan); margin-left: 10px;">
+                    
+                    <div class="timeline-item" style="position: relative; margin-bottom: 30px;">
+                        <div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--accent-cyan); box-shadow: 0 0 10px var(--accent-cyan);"></div>
+                        <h4 style="color: var(--text-light); font-size: 1.1rem;">BTS SIO Option SISR - Lycée René Descartes</h4>
+                        <span style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">2024 - Présent</span>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Spécialisation dans l'administration et la sécurisation des infrastructures critiques, avec une expertise focalisée sur la haute disponibilité des services et la mise en œuvre de politiques de cybersécurité rigoureuses</p>
+                    </div>
+
+                    <div class="timeline-item" style="position: relative; margin-bottom: 30px;">
+                        <div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--accent-cyan);"></div>
+                        <h4 style="color: var(--text-light); font-size: 1.1rem;">Baccalauréat Général (Mention assez bien) - Lycée Simone Veil</h4>
+                        <span style="color: var(--text-muted); font-weight: 600; font-size: 0.9rem;">2021 - 2024</span>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Obtention du baccalauréat , spécialité Mathématique , Numerique Science de l'informatique et Sciences Économioque et Sociales.</p>
+                    </div>
+
+                    <div class="timeline-item" style="position: relative;">
+                        <div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--accent-cyan);"></div>
+                        <h4 style="color: var(--text-light); font-size: 1.1rem;">Diplôme National du Brevet - Collège Pablo Picasso</h4>
+                        <span style="color: var(--text-muted); font-weight: 600; font-size: 0.9rem;">2017 - 2021</span>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Obtention du brevet des collèges mention bien.</p>
+                    </div>
+
+                </div>
+
+                <div class="tag-container" style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
                     <span class="tag">19 ans</span>
                     <span class="tag">Champs-sur-Marne</span>
                     <span class="tag">ahouari.idriss@gmail.com</span>
@@ -305,6 +331,7 @@
                 </div>
             </div>
         </div>
+    </section>
     </section>
     
     <section id="experience">
@@ -356,161 +383,418 @@
         </div>
     </section>
 
+
     <section id="skills">
-        <h2 class="section-title reveal">Mes Compétences Téchniques</h2>
+        <h2 class="section-title reveal">Mes Compétences Techniques</h2>
         <div class="grid-3">
            
             <div class="card reveal">
-                <div class="card-icon" style="color: #4CAF50;"><i class="fas fa-desktop"></i></div>
-                <h3>Systèmes d'exploitation</h3>
+                <div class="card-icon" style="color: #0078d4;"><i class="fab fa-windows"></i></div>
+                <h3>Administration Système</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Windows Server 2019/2022</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Active Directory, DNS, DHCP</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Linux (Debian, Ubuntu, CLI)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Virtualisation (Proxmox, ESXi)</li>
+                </ul>
                 <div class="tag-container">
-                    <span class="tag">Linux (Debian, Ubuntu)</span>
-                    <span class="tag">Windows Serveur</span>
-                    <span class="tag">Windows 7 à 11</span>
+                    <span class="tag">Hyper-V</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">GPO</span>
+                    <span class="tag">PowerShell</span>
+                </div>
+            </div>
+
+            <div class="card reveal" style="border: 1px solid var(--accent-cyan);">
+                <div class="card-icon" style="color: #4CAF50;"><i class="fas fa-network-wired"></i></div>
+                <h3>Infrastructure Réseau</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Cisco IOS (Switching & Routing)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> VLANs, Trunking, STP</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Routage OSPF, RIP</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Wireshark & Packet Tracer</li>
+                </ul>
+                <div class="tag-container">
+                    <span class="tag">CCNA</span>
+                    <span class="tag">TCP/IP</span>
+                    <span class="tag">ACL</span>
+                    <span class="tag">Radius/802.1x</span>
                 </div>
             </div>
 
             <div class="card reveal">
-                <div class="card-icon" style="color: #FF5722;"><i class="fas fa-network-wired"></i></div>
-                <h3>Réseaux & Sécurité</h3>
+                <div class="card-icon" style="color: #f44336;"><i class="fas fa-shield-alt"></i></div>
+                <h3>Cyber & Outils</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Pare-feu (PfSense, Stormshield)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Supervision (Zabbix, GLPI)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Sauvegarde (Veeam Backup)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> VPN IPsec / SSL</li>
+                </ul>
                 <div class="tag-container">
-                    <span class="tag">Cisco (Vlan, routage)</span>
-                    <span class="tag">Services IPv4/IPv6 (DHCP, DNS)</span>
-                    <span class="tag">Firewall (PFSENSE/STORMSHIELD)</span>
-                    <span class="tag">Active Directory</span>
-                    <span class="tag">WAN / LAN</span>
-                </div>
-            </div>
-
-
-            <div class="card reveal">
-                <div class="card-icon" style="color: #FFC107;"><i class="fas fa-server"></i></div>
-                <h3>Services & BDD</h3>
-                <div class="tag-container">
-                    <span class="tag">Apache / Nginx</span>
-                    <span class="tag">MySQL / SQL Server</span>
-                    <span class="tag">FTP / SFTP / SSH</span>
-                    <span class="tag">Samba / PHP</span>
+                    <span class="tag">SecOps</span>
+                    <span class="tag">ITIL</span>
+                    <span class="tag">RGPD</span>
                 </div>
             </div>
 
             <div class="card reveal">
-                <div class="card-icon" style="color: #9C27B0;"><i class="fas fa-box"></i></div>
-                <h3>Virtualisation</h3>
+                <div class="card-icon" style="color: #ff9800;"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud & DevOps</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Notions Cloud (Azure, AWS)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Conteneurisation (Docker)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Versioning (Git, GitHub)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> CI/CD Basics</li>
+                </ul>
                 <div class="tag-container">
-                    <span class="tag">VMware Workstation</span>
-                    <span class="tag">VirtualBox</span>
-                    <span class="tag">Hyperviseur Type 2</span>
+                    <span class="tag">SaaS</span>
+                    <span class="tag">IaaS</span>
+                    <span class="tag">GitLab</span>
+                </div>
+            </div>
+<div class="card reveal">
+                <div class="card-icon" style="color: #e91e63;"><i class="fas fa-user-shield"></i></div>
+                <h3>Sécurité & Hardening</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Chiffrement OpenSSL / Certificats</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Durcissement OS (Hardening)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Audit Nmap & Nessus</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Gestion des logs (RSYSLOG)</li>
+                </ul>
+                <div class="tag-container">
+                    <span class="tag">PKI</span>
+                    <span class="tag">Fail2Ban</span>
+                    <span class="tag">SSH Sec</span>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="card-icon" style="color: #03a9f4;"><i class="fas fa-server"></i></div>
+                <h3>Services Réseau</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> DNS Bind9 & Résolution</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Apache / Nginx / Reverse Proxy</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Postfix & Messagerie</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Transferts SFTP / NFS</li>
+                </ul>
+                <div class="tag-container">
+                    <span class="tag">VirtualHost</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Bind9</span>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="card-icon" style="color: #ffeb3b;"><i class="fas fa-code"></i></div>
+                <h3>Automatisation</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Scripts Bash (Linux Admin)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> PowerShell (Automatisation AD)</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Introduction à Ansible</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Tâches planifiées (Cron)</li>
+                </ul>
+                <div class="tag-container">
+                    <span class="tag">YAML</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Scripts</span>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="card-icon" style="color: #9e9e9e;"><i class="fas fa-tools"></i></div>
+                <h3>Gestion & Méthodes</h3>
+                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> OCS Inventory / Inventaire</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Déploiement WDS / Fog</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Documentation technique</li>
+                    <li><i class="fas fa-check-circle cyan-highlight"></i> Ticketing & Support GLPI</li>
+                </ul>
+                <div class="tag-container">
+                    <span class="tag">ITIL</span>
+                    <span class="tag">WDS</span>
+                    <span class="tag">Helpdesk</span>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section id="projects">
-        <h2 class="section-title reveal">Projets & Réalisations Clés</h2>
-        <div class="grid-3">
-            
-            <div class="card reveal">
-                <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1549942701-d70c4084224e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Helpdesk GLPI" class="project-img">
-                </div>
-                <h3 class="cyan-highlight">Mise en place GLPI (Scolaire)</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">
-                    Installation, configuration et personnalisation d'une solution de gestion de parc informatique et de service d'assistance (Helpdesk) avec GLPI.
-                </p>
-                <div class="tag-container">
-                    <span class="tag">Helpdesk</span>
-                    <span class="tag">Inventaire</span>
-                    <span class="tag">Ticketing</span>
-                </div>
-            </div>
-
-            <div class="card reveal" style="animation-delay: 0.2s;">
-                <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1544256718-32c02882890e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stockage RAID" class="project-img">
-                </div>
-                <h3 class="cyan-highlight">Services de Sauvegardes Sécurisées (RAID) (Scolaire)</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">
-                    Installation et configuration de systèmes de sauvegarde redondants pour garantir la reprise en cas de systèmes RAID pour le stockage des données sensibles.
-                </p>
-                <div class="tag-container">
-                    <span class="tag">RAID 6</span>
-                    <span class="tag">Redondance</span>
-                    <span class="tag">Sécurité</span>
-                </div>
-            </div>
-
-            <div class="card reveal" style="animation-delay: 0.4s;">
-                <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1576400994977-1c640e32d66d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hacking/John the Ripper" class="project-img">
-                </div>
-                <h3 class="cyan-highlight">Utilisation de John the Ripper (Scolaire)</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">
-                    Mise en œuvre de techniques de cassage de mots de passe à des fins d'audit et de sensibilisation à la sécurité, en utilisant l'outil John the Ripper.
-                </p>
-                <div class="tag-container">
-                    <span class="tag">Kali Linux</span>
-                    <span class="tag">Audit</span>
-                    <span class="tag">Hachage</span>
-                </div>
-            </div>
-
-            <div class="card reveal">
-                <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef526b0042a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chiffrement Crypto" class="project-img">
-                </div>
-                <h3 class="cyan-highlight">Signature et Chiffrement Électronique (Scolaire)</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">
-                    Mise en œuvre de mécanismes de signature électronique et de chiffrement pour garantir l'intégrité, l'authenticité et la confidentialité des communications.
-                </p>
-                <div class="tag-container">
-                    <span class="tag">Certificats</span>
-                    <span class="tag">Signature Numérique</span>
-                    <span class="tag">Sécurité</span>
-                </div>
-            </div>
-
-            <div class="card reveal" style="animation-delay: 0.2s;">
-                <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1556740778-999331899a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bacula Backup" class="project-img">
-                </div>
-                <h3 class="cyan-highlight">Configuration de Bacula (Scolaire)</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">
-                    Déploiement et configuration de Bacula, une solution de sauvegarde professionnelle pour gérer et automatiser la sauvegarde de plusieurs clients.
-                </p>
-                <div class="tag-container">
-                    <span class="tag">Sauvegarde</span>
-                    <span class="tag">Client/Serveur</span>
-                    <span class="tag">Linux</span>
-                </div>
-            </div>
-
-            <div class="card reveal" style="animation-delay: 0.4s;">
-                <div class="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1510511234053-548c7c77609a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pare-feu Security" class="project-img">
-                </div>
-                <h3 class="cyan-highlight">Configuration PFsense & Stormshield (Scolaire)</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">
-                    Mise en place et configuration de pare-feux (PFsense et Stormshield) pour la gestion avancée des flux réseau, incluant la gestion des règles de filtrage et des VPN.
-                </p>
-                <div class="tag-container">
-                    <span class="tag">PFsense</span>
-                    <span class="tag">Stormshield</span>
-                    <span class="tag">Firewall</span>
-                </div>
-            </div>
-            
-            
+    <h2 class="section-title reveal">Projets & TP</h2>
+    <div class="grid-3">
         
-
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=800&q=80" alt="Support" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Support Niveau 1 & 2</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Dépannage complet de périphériques : imprimantes, caisses tactiles et postes de travail chez LOGIKART.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Dépannage</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Hardware</span>
+            </div>
+            <a href="rapport-support.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
         </div>
-    </section>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://www.shutterstock.com/image-photo/phatthalung-thailand-july-10-2021-600nw-2006281805.jpg" alt="Switch" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Installation Switch Cisco</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Montage en rack, câblage console et configuration initiale (Hostname, IP, SSH).</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Physique</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Cisco</span>
+            </div>
+            <a href="switch.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container" style="background: #000; display: flex; align-items: center; justify-content: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2048px-Windows_logo_-_2012.svg.png" alt="Active Directory" class="project-img" style="object-fit: contain; width: 40%; padding: 10px;">
+            </div>
+            <h3 class="cyan-highlight">Domaine Active Directory</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Windows Server 2022 : Gestion utilisateurs, GPO de sécurité et services DNS/DHCP.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">AD DS</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">GPO</span>
+            </div>
+            <a href="AD.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBr41Dk32sRZtMFvB7QYGO5aoD3JCBJlXVgQ&s" alt="Cybersecurity" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Lab SSH & Fail2ban</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Sécurisation serveur, script brute-force et défense via Fail2Ban.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Cyber</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Linux</span>
+            </div>
+            <a href="lab-ssh-fail2ban.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://www.lemagit.fr/visuals/ComputerWeekly/Hero%20Images/blockchain-binary-network-adobe.jpeg" alt="Network Scan" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Reconnaissance Réseau</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Audit de surface d'attaque et analyse de trafic (Nmap & Wireshark).</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Nmap</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Wireshark</span>
+            </div>
+            <a href="reconnaissance-reseau.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Management" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Mise en place GLPI</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Installation et configuration d'un helpdesk et gestion de parc informatique.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Helpdesk</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">ITIL</span>
+            </div>
+            <a href="projet-glpi.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=800&q=80" alt="Data Center" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Sauvegardes RAID</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Configuration de systèmes de stockage redondants RAID pour la sécurité.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">RAID 6</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Stockage</span>
+            </div>
+            <a href="projet-raid.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+    
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://www.ece.fr/wp-content/uploads/sites/2/2024/04/saas-concept-collage.jpg?w=1480&h=800&crop=1" alt="Cloud Computing Nextcloud" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Nextcloud sur Apache</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Installation et configuration complète d'une solution Cloud privée : optimisation PHP, base de données et sécurisation Apache.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Cloud</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Apache</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Linux</span>
+            </div>
+            <a href="nextcloud.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" alt="Encryption" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Signature & Chiffrement</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Mise en œuvre de certificats SSL/TLS et intégrité des échanges numériques.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">SSL</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Crypto</span>
+            </div>
+            <a href="signature.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Firewall Security" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">PFsense & Stormshield</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Filtrage réseau avancé, règles de firewall et déploiement de tunnels VPN.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Firewall</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">VPN</span>
+            </div>
+            <a href="projet-firewall.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://siocours.lycees.nouvelle-aquitaine.pro/lib/exe/fetch.php/sisr1/packet_02.png" alt="Networking Labs" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Simulation Cisco Packet Tracer</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Architecture réseau complexe virtualisée : routage OSPF et VLANs.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">GNS3</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Réseau</span>
+            </div>
+            <a href="projet-gns3.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://grafana.com/media/blog/zabbix-plugin/zabbix-plugin_dashboard.png?w=1440" alt="Monitoring" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Supervision Zabbix</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Mise en place d'alertes SNMP et monitoring en temps réel des serveurs.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Zabbix</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">SNMP</span>
+            </div>
+            <a href="projet-zabbix.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://www.cisco.com/c/fr_fr/products/wireless/what-is-wifi/jcr:content/Grid/category_atl_d6eb/layout-category-atl/anchor_info_8bec.img.png/1740050802025.png" alt="Cisco Wireless" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Infrastructure WiFi Cisco</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Installation d'un point d'accès avec configuration complète du routeur (VLAN, DHCP) et du switch Cisco.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">WiFi</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Cisco</span>
+            </div>
+            <a href="projet-wifi-cisco.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Analyse XSS & BurpSuite</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Contournement de protections XSS et mise en place de contre-mesures de sécurité sur application Web.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">BurpSuite</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Pentest</span>
+            </div>
+            <a href="XSS.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=800&q=80" alt="Ubuntu Server" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Sécurisation Ubuntu UFW</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Mise en place d'un serveur Ubuntu durci avec configuration du pare-feu applicatif UFW.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Linux</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">UFW</span>
+            </div>
+            <a href="ufw.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://livestorm.imgix.net/1127/1733233797-creer-un-formulaire-de-contact-exemple.png" alt="Formulaire Web" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Formulaire de Contact</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Création d'un formulaire dynamique avec validation des données et traitement sécurisé des entrées.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">PHP</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Web</span>
+            </div>
+            <a href="formulaire.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" alt="VPN Security" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">VPN IPsec & SSL</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Interconnexion de sites distants via IPsec et accès nomades SSL avec Stormshield et Pfsense.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">IPsec</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">VPN SSL</span>
+            </div>
+            <a href="projet-vpn.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://www.tophebergeur.com/wp-content/uploads/2024/04/cluster-actif-passif-min-1024x452.jpg" alt="High Availability" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Haute Disponibilité Web</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Mise en œuvre d'un cluster Web avec Fail-Over pour garantir une continuité de service 24/7.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Fail-Over</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Cluster</span>
+            </div>
+            <a href="projet-ha.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNRNMKmj6bmf0SU4R-DLuKHlf3tjDK8s-yQ&s" alt="Security IPS" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Proxy Squid & Snort</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Filtrage applicatif avec Squid et détection/prévention d'intrusions avec l'IPS Snort.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Squid</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Snort</span>
+            </div>
+            <a href="projet-proxy.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="project-img-container">
+                <img src="https://i.ytimg.com/vi/xp5lJQGxQRA/maxresdefault.jpg" alt="DNS Server" class="project-img">
+            </div>
+            <h3 class="cyan-highlight">Serveur DNS Bind9</h3>
+            <p style="font-size:0.95rem; color:var(--text-muted); margin:10px 0;">Installation et configuration d'un serveur DNS faisant autorité sous Debian avec Bind9.</p>
+            <div class="tag-container" style="margin-bottom: 20px;">
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Linux</span>
+                <span class="tag" style="background: rgba(0, 188, 212, 0.1); color: var(--accent-cyan); border-color: var(--accent-cyan);">Bind9</span>
+            </div>
+            <a href="projet-dns.pdf" target="_blank" class="btn-primary" style="background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan); font-size: 0.8rem; padding: 8px 15px; width: fit-content;">Voir le PDF</a>
+        </div>
+    </div>
+
+    
+</section>
 
     <section id="veille">
         <div class="card reveal" style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap;">
             <div style="flex: 1; min-width: 300px;">
                 <h3 style="color: var(--accent-cyan); margin-bottom: 5px;"><i class="fas fa-eye"></i> Veille Stratégique</h3>
-                <h2>L'avenir de la <span class="cyan-highlight">Sécurité Cloud</span></h2>
+                <h2>L’évolution de la sécurité des réseaux avec les nouvelles technologies de pare-feu<span class="cyan-highlight"></span></h2>
                 <p style="margin-top: 10px; color: var(--text-muted);">
                     Analyse des architectures Zero Trust, des outils SASE et des menaces persistantes avancées (APT) dans les environnements AWS et Azure.
                 </p>
@@ -529,22 +813,37 @@
             </p>
             
             <div class="contact-info" style="margin-bottom: 40px;">
-                <div style="margin-bottom: 20px;">
+                <div style="margin-bottom: 25px;">
                     <i class="fas fa-envelope cyan-highlight" style="margin-right: 15px;"></i>
-                    <a href="mailto:ahouari.idriss@gmail.com" style="text-decoration: underline;">ahouari.idriss@gmail.com</a>
+                    <a href="mailto:ahouari.idriss@gmail.com" style="color: var(--text-light); text-decoration: none; font-weight: 500;">
+                        ahouari.idriss@gmail.com
+                    </a>
                 </div>
-                <div style="display: flex; justify-content: center; gap: 30px; font-size: 1.2rem; color: var(--text-muted);">
-                    <a href="https://linkedin.com" target="_blank" class="social-link cyan-highlight" title="LinkedIn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="https://github.com" target="_blank" class="social-link cyan-highlight" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+
+                <div style="display: flex; justify-content: center; gap: 40px; font-size: 1.2rem; margin-top: 30px;">
+                    <a href="https://www.linkedin.com/in/idriss-ahouari-58541938b/" 
+                       target="_blank" 
+                       class="social-link cyan-highlight" 
+                       style="display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;">
+                        <i class="fab fa-linkedin"></i> 
+                        <span style="font-size: 1.1rem;">LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/idriss-ahouari" 
+                       target="_blank" 
+                       class="social-link cyan-highlight" 
+                       style="display: flex; align-items: center; gap: 10px; text-decoration: none; transition: 0.3s;">
+                        <i class="fab fa-github"></i> 
+                        <span style="font-size: 1.1rem;">GitHub</span>
+                    </a>
                 </div>
             </div>
 
-            <a href="CV-PORTFOLIO.pdf" class="btn-primary">
+            <a href="CV-PORTFOLIO.pdf" class="btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
                 Télécharger mon CV <i class="fas fa-download"></i>
             </a>
         </div>
     </section>
-
 
     <footer>
         <p style="font-size: 0.8rem; color: var(--text-muted); opacity: 0.6;">
