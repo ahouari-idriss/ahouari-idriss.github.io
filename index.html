@@ -84,7 +84,6 @@
            ═══════════════════════════════════════ */
         #veille-tech { padding:100px 8%; }
 
-        /* Héro sujet + KPIs */
         .veille-hero-grid {
             display:grid;
             grid-template-columns:1fr 300px;
@@ -110,7 +109,6 @@
         .veille-topic-card p  { font-size:0.88rem; color:var(--text-muted); line-height:1.75; }
         .veille-topic-card p + p { margin-top:12px; }
 
-        /* Citation mise en avant */
         .veille-quote {
             margin-top:20px;
             border-left:3px solid var(--accent-cyan);
@@ -123,7 +121,6 @@
             line-height:1.65;
         }
 
-        /* KPIs */
         .veille-kpi-grid { display:flex; flex-direction:column; gap:16px; }
         .veille-kpi {
             background:var(--bg-card);
@@ -136,7 +133,6 @@
         .veille-kpi-num { font-family:'Montserrat',sans-serif; font-size:2rem; font-weight:900; color:var(--accent-cyan); line-height:1; margin-bottom:6px; }
         .veille-kpi-label { font-size:0.8rem; color:var(--text-muted); line-height:1.45; }
 
-        /* Bloc titre secondaire */
         .veille-block-title {
             font-size:1.2rem; color:var(--text-light);
             margin-bottom:22px;
@@ -144,7 +140,6 @@
         }
         .veille-block-title i { color:var(--accent-cyan); }
 
-        /* ── Évolution 5 articles (timeline) ── */
         .veille-timeline {
             position:relative;
             padding-left:32px;
@@ -154,9 +149,7 @@
             flex-direction:column;
             gap:32px;
         }
-        .veille-tl-item {
-            position:relative;
-        }
+        .veille-tl-item { position:relative; }
         .veille-tl-item::before {
             content:'';
             position:absolute;
@@ -194,7 +187,6 @@
         }
         .veille-tl-card .tl-apport span { color:var(--accent-cyan); font-weight:700; }
 
-        /* ── Synthèse ── */
         .veille-synthese-grid {
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -216,7 +208,6 @@
         .veille-synthese-card h4 { font-size:0.97rem; margin-bottom:8px; color:var(--accent-cyan); }
         .veille-synthese-card p  { font-size:0.83rem; color:var(--text-muted); line-height:1.6; }
 
-        /* ── Impact SISR ── */
         .veille-impact-grid {
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -235,7 +226,6 @@
         .veille-impact-ico { color:var(--accent-cyan); font-size:1.2rem; margin-top:2px; flex-shrink:0; }
         .veille-impact-item p { font-size:0.83rem; color:var(--text-muted); line-height:1.6; }
 
-        /* ── Conclusion ── */
         .veille-conclusion {
             background:rgba(0,188,212,0.05);
             border:1px solid rgba(0,188,212,0.2);
@@ -260,7 +250,6 @@
             color:var(--accent-cyan); margin-bottom:12px; display:block; font-style:normal;
         }
 
-        /* ── FLUX RSS ── */
         .rss-topbar {
             display:flex; align-items:center; justify-content:space-between;
             flex-wrap:wrap; gap:12px; margin-bottom:22px;
@@ -354,7 +343,7 @@
     <section id="home">
         <div class="hero-badge reveal" style="color:var(--accent-cyan);border:1px solid var(--accent-cyan);padding:5px 15px;border-radius:4px;">BTS SIO - OPTION SISR</div>
         <h1 class="hero-title reveal" style="font-size:5rem;max-width:900px;margin-top:20px;"><span class="cyan-highlight">Idriss Ahouari</span></h1>
-        <p class="hero-subtitle reveal" style="font-size:1.2rem;color:var(--text-muted);max-width:700px;margin:25px auto 40px;">Administrateur Système & Réseau en devenir. 19 ans. Passionné par la cybersécurité et les infrastructures robustes.</p>
+        <p class="hero-subtitle reveal" style="font-size:1.2rem;color:var(--text-muted);max-width:700px;margin:25px auto 40px;">Administrateur Système &amp; Réseau en devenir. 19 ans. Passionné par la cybersécurité et les infrastructures robustes.</p>
         <div class="reveal" style="animation-delay:.6s;">
             <a href="#projects" class="btn-primary" style="margin-right:15px;">Explorer les Projets <i class="fas fa-arrow-right"></i></a>
             <a href="#contact" class="btn-primary" style="background:transparent;color:var(--text-light);border:1px solid var(--text-muted);box-shadow:none;">Me Contacter</a>
@@ -367,7 +356,7 @@
         <div class="grid-3">
             <div class="card reveal" style="grid-column:span 3;">
                 <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
-                <h3>Mon Profil & Parcours Scolaire</h3>
+                <h3>Mon Profil &amp; Parcours Scolaire</h3>
                 <p style="margin-top:10px;margin-bottom:30px;">Passionné par l'informatique et les nouvelles technologies, je m'appelle Idriss Ahouari, j'ai 19 ans. Mon objectif est de devenir un expert en gestion d'infrastructures réseaux et en sécurisation des données.</p>
                 <div style="position:relative;padding-left:30px;border-left:2px solid var(--accent-cyan);margin-left:10px;">
                     <div style="position:relative;margin-bottom:30px;">
@@ -390,7 +379,7 @@
                     </div>
                 </div>
                 <div class="tag-container" style="margin-top:40px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;">
-                    <span class="tag">19 ans</span><span class="tag">Champs-sur-Marne</span><span class="tag">ahouari.idriss@gmail.com</span><span class="tag">Recherche Alternance</span>
+                    <span class="tag">19 ans</span><span class="tag">Champs-sur-Marne</span><span class="tag"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="67060f081206150e490e03150e141427000a060e0b4904080a">[email&#160;protected]</a></span><span class="tag">Recherche Alternance</span>
                 </div>
             </div>
         </div>
@@ -398,7 +387,7 @@
 
     <!-- EXPÉRIENCE -->
     <section id="experience">
-        <h2 class="section-title reveal">Mon Parcours & Stages</h2>
+        <h2 class="section-title reveal">Mon Parcours &amp; Stages</h2>
         <div class="grid-3">
             <div class="card reveal">
                 <div class="experience-item">
@@ -438,34 +427,34 @@
         <h2 class="section-title reveal">Mes Compétences Techniques</h2>
         <div class="grid-3">
             <div class="card reveal"><div class="card-icon" style="color:#0078d4;"><i class="fab fa-windows"></i></div><h3>Administration Système</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Windows Server 2019/2022</li><li><i class="fas fa-check-circle cyan-highlight"></i> Active Directory, DNS, DHCP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Linux (Debian, Ubuntu, CLI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Virtualisation (VirtualBox, VMware)</li></ul><div class="tag-container"><span class="tag">Hyper-V</span><span class="tag">Bash</span><span class="tag">GPO</span><span class="tag">PowerShell</span></div></div>
-            <div class="card reveal" style="border:1px solid var(--accent-cyan);"><div class="card-icon" style="color:#4CAF50;"><i class="fas fa-network-wired"></i></div><h3>Infrastructure Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Cisco IOS (Switching & Routing)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VLANs, Trunking, STP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Routage OSPF, RIP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Wireshark & Packet Tracer</li></ul><div class="tag-container"><span class="tag">CCNA</span><span class="tag">TCP/IP</span><span class="tag">ACL</span><span class="tag">Radius/802.1x</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#f44336;"><i class="fas fa-shield-alt"></i></div><h3>Cyber & Outils</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Pare-feu (PfSense, Stormshield)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Supervision (Zabbix, GLPI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Sauvegarde (Veeam Backup)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VPN IPsec / SSL</li></ul><div class="tag-container"><span class="tag">SecOps</span><span class="tag">ITIL</span><span class="tag">RGPD</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#ff9800;"><i class="fas fa-cloud"></i></div><h3>Cloud & DevOps</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Notions Cloud (Azure, AWS)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Conteneurisation (Docker)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Versioning (Git, GitHub)</li><li><i class="fas fa-check-circle cyan-highlight"></i> CI/CD Basics</li></ul><div class="tag-container"><span class="tag">SaaS</span><span class="tag">IaaS</span><span class="tag">GitLab</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#e91e63;"><i class="fas fa-user-shield"></i></div><h3>Sécurité & Hardening</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Chiffrement OpenSSL / Certificats</li><li><i class="fas fa-check-circle cyan-highlight"></i> Durcissement OS (Hardening)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Audit Nmap & Nessus</li><li><i class="fas fa-check-circle cyan-highlight"></i> Gestion des logs (RSYSLOG)</li></ul><div class="tag-container"><span class="tag">PKI</span><span class="tag">Fail2Ban</span><span class="tag">SSH Sec</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#03a9f4;"><i class="fas fa-server"></i></div><h3>Services Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> DNS Bind9 & Résolution</li><li><i class="fas fa-check-circle cyan-highlight"></i> Apache / Nginx / Reverse Proxy</li><li><i class="fas fa-check-circle cyan-highlight"></i> Postfix & Messagerie</li><li><i class="fas fa-check-circle cyan-highlight"></i> Transferts SFTP / NFS</li></ul><div class="tag-container"><span class="tag">VirtualHost</span><span class="tag">SQL</span><span class="tag">Bind9</span></div></div>
+            <div class="card reveal" style="border:1px solid var(--accent-cyan);"><div class="card-icon" style="color:#4CAF50;"><i class="fas fa-network-wired"></i></div><h3>Infrastructure Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Cisco IOS (Switching &amp; Routing)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VLANs, Trunking, STP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Routage OSPF, RIP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Wireshark &amp; Packet Tracer</li></ul><div class="tag-container"><span class="tag">CCNA</span><span class="tag">TCP/IP</span><span class="tag">ACL</span><span class="tag">Radius/802.1x</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#f44336;"><i class="fas fa-shield-alt"></i></div><h3>Cyber &amp; Outils</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Pare-feu (PfSense, Stormshield)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Supervision (Zabbix, GLPI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Sauvegarde (Veeam Backup)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VPN IPsec / SSL</li></ul><div class="tag-container"><span class="tag">SecOps</span><span class="tag">ITIL</span><span class="tag">RGPD</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#ff9800;"><i class="fas fa-cloud"></i></div><h3>Cloud &amp; DevOps</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Notions Cloud (Azure, AWS)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Conteneurisation (Docker)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Versioning (Git, GitHub)</li><li><i class="fas fa-check-circle cyan-highlight"></i> CI/CD Basics</li></ul><div class="tag-container"><span class="tag">SaaS</span><span class="tag">IaaS</span><span class="tag">GitLab</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#e91e63;"><i class="fas fa-user-shield"></i></div><h3>Sécurité &amp; Hardening</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Chiffrement OpenSSL / Certificats</li><li><i class="fas fa-check-circle cyan-highlight"></i> Durcissement OS (Hardening)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Audit Nmap &amp; Nessus</li><li><i class="fas fa-check-circle cyan-highlight"></i> Gestion des logs (RSYSLOG)</li></ul><div class="tag-container"><span class="tag">PKI</span><span class="tag">Fail2Ban</span><span class="tag">SSH Sec</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#03a9f4;"><i class="fas fa-server"></i></div><h3>Services Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> DNS Bind9 &amp; Résolution</li><li><i class="fas fa-check-circle cyan-highlight"></i> Apache / Nginx / Reverse Proxy</li><li><i class="fas fa-check-circle cyan-highlight"></i> Postfix &amp; Messagerie</li><li><i class="fas fa-check-circle cyan-highlight"></i> Transferts SFTP / NFS</li></ul><div class="tag-container"><span class="tag">VirtualHost</span><span class="tag">SQL</span><span class="tag">Bind9</span></div></div>
             <div class="card reveal"><div class="card-icon" style="color:#ffeb3b;"><i class="fas fa-code"></i></div><h3>Automatisation</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Scripts Bash (Linux Admin)</li><li><i class="fas fa-check-circle cyan-highlight"></i> PowerShell (Automatisation AD)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Introduction à Ansible</li><li><i class="fas fa-check-circle cyan-highlight"></i> Tâches planifiées (Cron)</li></ul><div class="tag-container"><span class="tag">YAML</span><span class="tag">Python</span><span class="tag">Scripts</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#9e9e9e;"><i class="fas fa-tools"></i></div><h3>Gestion & Méthodes</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> OCS Inventory / Inventaire</li><li><i class="fas fa-check-circle cyan-highlight"></i> Déploiement WDS / Fog</li><li><i class="fas fa-check-circle cyan-highlight"></i> Documentation technique</li><li><i class="fas fa-check-circle cyan-highlight"></i> Ticketing & Support GLPI</li></ul><div class="tag-container"><span class="tag">ITIL</span><span class="tag">WDS</span><span class="tag">Helpdesk</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#9e9e9e;"><i class="fas fa-tools"></i></div><h3>Gestion &amp; Méthodes</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> OCS Inventory / Inventaire</li><li><i class="fas fa-check-circle cyan-highlight"></i> Déploiement WDS / Fog</li><li><i class="fas fa-check-circle cyan-highlight"></i> Documentation technique</li><li><i class="fas fa-check-circle cyan-highlight"></i> Ticketing &amp; Support GLPI</li></ul><div class="tag-container"><span class="tag">ITIL</span><span class="tag">WDS</span><span class="tag">Helpdesk</span></div></div>
         </div>
     </section>
 
     <!-- PROJETS -->
     <section id="projects">
-        <h2 class="section-title reveal">Projets & TP</h2>
+        <h2 class="section-title reveal">Projets &amp; TP</h2>
         <div class="grid-3">
-            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=800&q=80" class="project-img" alt="Support"></div><h3 class="cyan-highlight">Support Niveau 1 & 2</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Dépannage complet de périphériques : imprimantes, caisses tactiles et postes de travail chez LOGIKART.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Dépannage</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Hardware</span></div><a href="SUPPORT.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
+            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=800&q=80" class="project-img" alt="Support"></div><h3 class="cyan-highlight">Support Niveau 1 &amp; 2</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Dépannage complet de périphériques : imprimantes, caisses tactiles et postes de travail chez LOGIKART.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Dépannage</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Hardware</span></div><a href="SUPPORT.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="project-img" alt="Autotask"></div><h3 class="cyan-highlight">Utilisation AUTOTASK PSA</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Gestion, création de tickets à l'aide de AUTOTASK (pro).</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Helpdesk</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">ITIL</span></div><a href="AUTOTASK.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container" style="background:#000;display:flex;align-items:center;justify-content:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2048px-Windows_logo_-_2012.svg.png" class="project-img" style="object-fit:contain;width:40%;padding:10px;" alt="AD"></div><h3 class="cyan-highlight">Domaine Active Directory</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Windows Server 2022 : Gestion utilisateurs, GPO de sécurité, Automatisation PowerShell.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">AD DS</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">GPO</span></div><a href="LAB-AD.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
-            <div class="card reveal"><div class="project-img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBr41Dk32sRZtMFvB7QYGO5aoD3JCBJlXVgQ&s" class="project-img" alt="SSH"></div><h3 class="cyan-highlight">Lab SSH & Fail2ban</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Sécurisation serveur, script brute-force et défense via Fail2Ban.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Cyber</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Linux</span></div><a href="fail2ban.ssh.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
+            <div class="card reveal"><div class="project-img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBr41Dk32sRZtMFvB7QYGO5aoD3JCBJlXVgQ&s" class="project-img" alt="SSH"></div><h3 class="cyan-highlight">Lab SSH &amp; Fail2ban</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Sécurisation serveur, script brute-force et défense via Fail2Ban.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Cyber</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Linux</span></div><a href="fail2ban.ssh.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://www.shutterstock.com/image-photo/phatthalung-thailand-july-10-2021-600nw-2006281805.jpg" class="project-img" alt="VLAN"></div><h3 class="cyan-highlight">Configuration VLAN et TRUNK</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Configuration VLAN et TRUNK sur un réseau Cisco.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Physique</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Cisco</span></div><a href="VLAN et TRUNK.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=800&q=80" class="project-img" alt="Routage"></div><h3 class="cyan-highlight">Routage statique IPv4/6</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Mise en place de routes statiques IPv4 et IPv6.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">IPv4/6</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Routage</span></div><a href="ROUTAGE STATIQUE.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://www.ece.fr/wp-content/uploads/sites/2/2024/04/saas-concept-collage.jpg?w=1480&h=800&crop=1" class="project-img" alt="Nextcloud"></div><h3 class="cyan-highlight">Nextcloud sur Apache</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Installation et configuration d'une solution Cloud privée : PHP, BDD et sécurisation Apache.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Cloud</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Apache</span></div><a href="nextcloud.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
-            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" class="project-img" alt="Signature"></div><h3 class="cyan-highlight">Signature & Chiffrement</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Mise en œuvre de certificats SSL/TLS et intégrité des échanges numériques.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">SSL</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Crypto</span></div><a href="signature.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
+            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" class="project-img" alt="Signature"></div><h3 class="cyan-highlight">Signature &amp; Chiffrement</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Mise en oeuvre de certificats SSL/TLS et intégrité des échanges numériques.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">SSL</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Crypto</span></div><a href="signature.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" class="project-img" alt="PFSense"></div><h3 class="cyan-highlight">LAB PFsense</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Filtrage réseau avancé, règles de firewall et création d'alias.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Firewall</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">VPN</span></div><a href="LAB PFESENSE.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://grafana.com/media/blog/zabbix-plugin/zabbix-plugin_dashboard.png?w=1440" class="project-img" alt="Zabbix"></div><h3 class="cyan-highlight">Supervision Zabbix</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Mise en place d'alertes SNMP et monitoring en temps réel des serveurs.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Zabbix</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">SNMP</span></div><a href="ZABBIX.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
-            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" class="project-img" alt="XSS"></div><h3 class="cyan-highlight">Analyse XSS & BurpSuite</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Contournement de protections XSS et contre-mesures de sécurité sur application Web.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">BurpSuite</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Pentest</span></div><a href="XSS.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
-            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" class="project-img" alt="VPN"></div><h3 class="cyan-highlight">VPN IPsec & SSL</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Interconnexion de sites distants via IPsec et accès nomades SSL avec Stormshield et Pfsense.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">IPsec</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">VPN SSL</span></div><a href="LAB VPN IDRISS.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
+            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" class="project-img" alt="XSS"></div><h3 class="cyan-highlight">Analyse XSS &amp; BurpSuite</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Contournement de protections XSS et contre-mesures de sécurité sur application Web.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">BurpSuite</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Pentest</span></div><a href="XSS.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
+            <div class="card reveal"><div class="project-img-container"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" class="project-img" alt="VPN"></div><h3 class="cyan-highlight">VPN IPsec &amp; SSL</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Interconnexion de sites distants via IPsec et accès nomades SSL avec Stormshield et Pfsense.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">IPsec</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">VPN SSL</span></div><a href="LAB VPN IDRISS.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://www.tophebergeur.com/wp-content/uploads/2024/04/cluster-actif-passif-min-1024x452.jpg" class="project-img" alt="HA"></div><h3 class="cyan-highlight">Haute Disponibilité Web</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Cluster Web avec Fail-Over pour garantir une continuité de service 24/7.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Fail-Over</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Cluster</span></div><a href="projet-ha.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
-            <div class="card reveal"><div class="project-img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNRNMKmj6bmf0SU4R-DLuKHlf3tjDK8s-yQ&s" class="project-img" alt="Squid Snort"></div><h3 class="cyan-highlight">Proxy Squid & Snort</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Filtrage applicatif avec Squid et détection/prévention d'intrusions avec l'IPS Snort.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Squid</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Snort</span></div><a href="LAB SQUID.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
+            <div class="card reveal"><div class="project-img-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNRNMKmj6bmf0SU4R-DLuKHlf3tjDK8s-yQ&s" class="project-img" alt="Squid Snort"></div><h3 class="cyan-highlight">Proxy Squid &amp; Snort</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Filtrage applicatif avec Squid et détection/prévention d'intrusions avec l'IPS Snort.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Squid</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Snort</span></div><a href="LAB SQUID.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://i.ytimg.com/vi/xp5lJQGxQRA/maxresdefault.jpg" class="project-img" alt="DNS"></div><h3 class="cyan-highlight">Serveur DNS Bind9</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Installation et configuration d'un serveur DNS faisant autorité sous Debian avec Bind9.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Linux</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Bind9</span></div><a href="VPN.SNS.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Voir le PDF</a></div>
         </div>
     </section>
@@ -482,20 +471,20 @@
                 <div class="veille-topic-badge"><i class="fas fa-shield-halved"></i> Sujet de veille</div>
                 <h2>L'évolution des pare-feu : de la protection périmétrique aux solutions Cloud intelligentes</h2>
                 <p>
-                    Le pare-feu traditionnel protégeait un réseau unique en étant placé à son entrée, lorsque tous les utilisateurs travaillaient sur site.
-                    Avec le <strong>Cloud, le télétravail et les applications SaaS</strong>, les utilisateurs et les données sont désormais dispersés, ce qui rend ce modèle inefficace.
+                    Le pare-feu traditionnel protège un réseau unique en étant placé à son entrée, lorsque tous les utilisateurs travaillent sur site.
+                    Avec le <strong>Cloud, le télétravail et les applications SaaS</strong>, les utilisateurs et les données sont désormais dispersés partout, ce qui rend ce modèle périmétrique inefficace.
                 </p>
                 <p>
-                    Le pare-feu évolue donc vers des solutions <strong>Cloud-native, intelligentes et basées sur l'identité</strong>, capables de sécuriser les accès partout, via des architectures comme le <strong>SASE</strong>, le <strong>Zero Trust</strong> et l'intégration de l'<strong>IA</strong>.
+                    Le pare-feu évolue donc vers des solutions <strong>Cloud-native, intelligentes et basées sur l'identité</strong>, capables de sécuriser les accès où que soit l'utilisateur, via des architectures comme le <strong>SASE</strong>, le <strong>Zero Trust</strong> et l'intégration de l'<strong>IA</strong>.
                 </p>
                 <div class="veille-quote">
-                    "Le pare-feu n'est plus une barrière fixe à l'entrée du réseau, mais une sécurité distribuée qui suit l'utilisateur où qu'il soit."
+                    "Le pare-feu n'est plus une barrière fixe à l'entrée du réseau — il devient une sécurité distribuée qui suit l'utilisateur où qu'il soit."
                 </div>
             </div>
             <div class="veille-kpi-grid">
                 <div class="veille-kpi">
                     <div class="veille-kpi-num">60%</div>
-                    <div class="veille-kpi-label">Adoption SASE en 2026</div>
+                    <div class="veille-kpi-label">des entreprises adopteront le SASE d'ici fin 2026 selon Gartner</div>
                 </div>
                 <div class="veille-kpi">
                     <div class="veille-kpi-num">6</div>
@@ -508,8 +497,8 @@
             </div>
         </div>
 
-        <!-- ── 2. CONTEXTE / POURQUOI ── -->
-        <h3 class="veille-block-title reveal"><i class="fas fa-lightbulb"></i> Contexte & évolution (2024–2026)</h3>
+        <!-- ── 2. POURQUOI ── -->
+        <h3 class="veille-block-title reveal"><i class="fas fa-lightbulb"></i> Pourquoi les pare-feux traditionnels ne suffisent plus</h3>
 
         <div class="veille-timeline reveal">
 
@@ -517,59 +506,59 @@
                 <div class="veille-tl-date">Octobre 2024</div>
                 <div class="veille-tl-card">
                     <span class="tl-source">Zenarmor</span>
-                    <h4>SASE vs Firewall : Differences in Security and Deployment</h4>
-                    <p>Compare les approches traditionnelles de pare-feu à l'architecture SASE, montrant comment cette dernière intègre plusieurs fonctions (pare-feu, ZTNA, SWG, SD-WAN) dans une plateforme Cloud cohérente.</p>
-                    <div class="tl-apport"><span>→ Apport :</span> Dès fin 2024, les modèles Cloud-native comme le SASE étaient déjà considérés comme supérieurs aux pare-feux classiques, confirmant la tendance à la transformation des architectures de sécurité.</div>
+                    <h4>SASE vs Firewall</h4>
+                    <p>Compare le pare-feu traditionnel et l'architecture SASE. L'article montre que les pare-feux seuls ne suffisent plus à sécuriser un réseau moderne, et que le Cloud devient central dans les nouvelles stratégies de sécurité.</p>
+                    <div class="tl-apport"><span>→ Apport :</span> Point de départ de l'évolution — le pare-feu classique commence à être remplacé par des solutions Cloud.</div>
                 </div>
             </div>
 
             <div class="veille-tl-item">
-                <div class="veille-tl-date">Mars 2025</div>
+                <div class="veille-tl-date">Mars 2025 — Article 1</div>
                 <div class="veille-tl-card">
                     <span class="tl-source">Orange Cyberdefense</span>
-                    <h4>The 10-year security plan : why SASE is the future of cybersecurity</h4>
-                    <p>Montre que les pare-feux traditionnels ne suffisent plus face à l'augmentation des cyberattaques et à la généralisation du Cloud.</p>
-                    <div class="tl-apport"><span>→ Apport :</span> Introduit la nécessité du modèle SASE et marque le début de la transition vers le Cloud.</div>
+                    <h4>Les limites des pare-feux traditionnels face à l'explosion des cyberattaques</h4>
+                    <p>Les pare-feux traditionnels sont dépassés : l'explosion des cyberattaques et la généralisation du Cloud rendent la sécurité périmétrique inefficace. L'article indique que 85 % des entreprises vont adopter le SASE d'ici 2026.</p>
+                    <div class="tl-apport"><span>→ Apport :</span> Montre clairement la limite des pare-feux classiques — début de la transition vers des solutions modernes.</div>
                 </div>
             </div>
 
             <div class="veille-tl-item">
-                <div class="veille-tl-date">Mars 2025</div>
+                <div class="veille-tl-date">Mars 2025 — Article 2</div>
                 <div class="veille-tl-card">
-                    <span class="tl-source">Cato Networks — Gartner</span>
-                    <h4>Gartner 2025 Strategic Roadmap for Zero Trust Security</h4>
-                    <p>Le Zero Trust devient une stratégie globale de cybersécurité. L'accès au réseau n'est plus basé sur la localisation mais sur l'identité de l'utilisateur.</p>
-                    <div class="tl-apport"><span>→ Apport :</span> Marque la fin de la confiance implicite et le remplacement progressif des VPN traditionnels.</div>
+                    <span class="tl-source">Orange Cyberdefense</span>
+                    <h4>Le pare-feu devient un service Cloud basé sur l'identité</h4>
+                    <p>Le pare-feu n'est plus un équipement physique mais une fonction intégrée dans une solution Cloud globale. La sécurité devient accessible partout pour les utilisateurs distants, et repose désormais sur l'identité plutôt que sur le réseau.</p>
+                    <div class="tl-apport"><span>→ Apport :</span> Montre l'évolution du rôle du pare-feu — il n'est plus un équipement, mais un service intégré.</div>
+                </div>
+            </div>
+
+            <div class="veille-tl-item">
+                <div class="veille-tl-date">Juin 2025</div>
+                <div class="veille-tl-card">
+                    <span class="tl-source">Orange Cyberdefense</span>
+                    <h4>+32 % d'attaques sur les accès à distance : les VPN et pare-feux classiques atteignent leurs limites</h4>
+                    <p>Les attaques ciblant les accès à distance ont augmenté de 32 %. Les pare-feux et VPN classiques atteignent leurs limites face à ces nouvelles menaces, et la nécessité d'une sécurité adaptée au Cloud devient urgente.</p>
+                    <div class="tl-apport"><span>→ Apport :</span> Explique pourquoi le pare-feu doit évoluer — les nouvelles menaces ne sont plus gérables avec les anciens modèles.</div>
                 </div>
             </div>
 
             <div class="veille-tl-item">
                 <div class="veille-tl-date">Juillet 2025</div>
                 <div class="veille-tl-card">
-                    <span class="tl-source">Fortinet — Gartner Magic Quadrant</span>
-                    <h4>Gartner Magic Quadrant for Single-Vendor SASE</h4>
-                    <p>Le SASE combine plusieurs technologies : pare-feu Cloud, SD-WAN, Zero Trust dans une architecture unifiée.</p>
-                    <div class="tl-apport"><span>→ Apport :</span> Montre la convergence réseau + sécurité et l'émergence du Firewall-as-a-Service (FWaaS).</div>
+                    <span class="tl-source">Fortinet — rapport Gartner</span>
+                    <h4>Le Firewall-as-a-Service (FWaaS) : réseau, sécurité et IA unifiés</h4>
+                    <p>Le pare-feu devient un Firewall-as-a-Service (FWaaS), intégré dans une architecture qui unifie réseau et sécurité. L'intelligence artificielle est intégrée pour détecter et bloquer automatiquement les menaces en temps réel.</p>
+                    <div class="tl-apport"><span>→ Apport :</span> Montre la transformation technique du pare-feu — passage à un service Cloud intelligent.</div>
                 </div>
             </div>
 
             <div class="veille-tl-item">
-                <div class="veille-tl-date">Octobre 2025</div>
+                <div class="veille-tl-date">Décembre 2025 / 2026</div>
                 <div class="veille-tl-card">
-                    <span class="tl-source">Gartner</span>
-                    <h4>Top Strategic Technology Trends for 2026</h4>
-                    <p>L'intelligence artificielle devient un élément central des solutions de cybersécurité modernes.</p>
-                    <div class="tl-apport"><span>→ Apport :</span> Automatisation des règles de sécurité et détection avancée des menaces grâce à l'IA.</div>
-                </div>
-            </div>
-
-            <div class="veille-tl-item">
-                <div class="veille-tl-date">2026</div>
-                <div class="veille-tl-card">
-                    <span class="tl-source">AlgoSec</span>
-                    <h4>The State of Network Security 2026</h4>
-                    <p>Le SASE est désormais largement adopté, plus seulement en phase d'expérimentation. L'intégration SASE + SD-WAN est devenue la norme.</p>
-                    <div class="tl-apport"><span>→ Apport :</span> La part d'entreprises sans stratégie SASE diminue chaque année — adoption du Zero Trust en forte progression.</div>
+                    <span class="tl-source">Orange Cyberdefense — Security Navigator 2026</span>
+                    <h4>Cybercriminalité industrialisée : le pare-feu doit devenir automatique et adaptatif</h4>
+                    <p>Le rapport constate une explosion des cyberattaques, désormais industrialisées, plus complexes et plus massives. L'utilisation de l'IA par les attaquants s'accélère, rendant indispensable un pare-feu capable de répondre automatiquement et de s'adapter en temps réel.</p>
+                    <div class="tl-apport"><span>→ Apport :</span> Montre le futur du pare-feu — il doit devenir automatique, intelligent et adaptatif.</div>
                 </div>
             </div>
 
@@ -580,18 +569,18 @@
         <div class="veille-synthese-grid reveal">
             <div class="veille-synthese-card">
                 <div class="veille-synthese-num">01</div>
-                <h4>Passage au Cloud</h4>
-                <p>Le pare-feu devient un service (FWaaS) intégré dans des architectures SASE. La protection n'est plus physique, elle est distribuée et accessible depuis n'importe où.</p>
+                <h4>Le pare-feu passe au Cloud</h4>
+                <p>Plus besoin d'un boîtier physique à l'entrée du réseau. Le pare-feu devient un service (FWaaS) accessible depuis Internet, intégré dans des plateformes SASE. La protection n'est plus locale, elle suit l'utilisateur partout.</p>
             </div>
             <div class="veille-synthese-card">
                 <div class="veille-synthese-num">02</div>
-                <h4>Sécurité basée sur l'identité</h4>
-                <p>Le modèle Zero Trust remplace les VPN et les approches classiques. L'accès n'est plus accordé par localisation mais vérifié en continu selon l'identité et le contexte.</p>
+                <h4>La sécurité se base sur l'identité</h4>
+                <p>Le modèle Zero Trust remplace la confiance accordée au réseau. L'accès n'est plus automatique selon la localisation — il est vérifié en continu selon qui se connecte, depuis quel appareil et dans quel contexte.</p>
             </div>
             <div class="veille-synthese-card">
                 <div class="veille-synthese-num">03</div>
-                <h4>Intégration de l'IA</h4>
-                <p>Les pare-feux deviennent capables de détecter, analyser et réagir automatiquement aux menaces, réduisant la charge manuelle des équipes IT.</p>
+                <h4>L'IA automatise la défense</h4>
+                <p>Les pare-feux modernes intègrent l'intelligence artificielle pour détecter les menaces en temps réel, automatiser les réponses et réduire la charge des équipes IT. Le pare-feu devient une plateforme intelligente et autonome.</p>
             </div>
         </div>
 
@@ -600,26 +589,26 @@
         <div class="veille-impact-grid reveal">
             <div class="veille-impact-item">
                 <span class="veille-impact-ico"><i class="fas fa-arrow-trend-down"></i></span>
-                <p>Moins de gestion de matériel physique, plus de solutions Cloud à administrer.</p>
+                <p>Moins de gestion de matériel physique. Les infrastructures migrent vers le Cloud : il faut savoir configurer et administrer des solutions Cloud-native.</p>
             </div>
             <div class="veille-impact-item">
                 <span class="veille-impact-ico"><i class="fas fa-id-badge"></i></span>
-                <p>Administration des accès basée sur l'identité et contrôle des politiques de sécurité.</p>
+                <p>La gestion des identités devient centrale. Contrôler qui accède à quoi, depuis quel appareil et dans quel contexte est désormais le coeur du métier.</p>
             </div>
             <div class="veille-impact-item">
                 <span class="veille-impact-ico"><i class="fas fa-robot"></i></span>
-                <p>Analyse des alertes générées par l'IA, avec un rôle actif dans la cybersécurité globale.</p>
+                <p>Travailler avec des outils dopés à l'IA : analyser les alertes générées automatiquement, comprendre les décisions de l'IA et intervenir en cas d'anomalie.</p>
             </div>
             <div class="veille-impact-item">
                 <span class="veille-impact-ico"><i class="fas fa-shield-halved"></i></span>
-                <p>Le technicien réseau devient un acteur à part entière de la cybersécurité de l'entreprise.</p>
+                <p>Le technicien réseau n'est plus seulement un gestionnaire d'infrastructure — il devient un acteur à part entière de la cybersécurité de l'entreprise.</p>
             </div>
         </div>
 
         <!-- ── 5. CONCLUSION ── -->
         <div class="veille-conclusion reveal">
-            <span class="conclusion-label"><i class="fas fa-microphone"></i> Conclusion </span>
-            <p>Ma veille montre une évolution claire : on passe d'un pare-feu physique classique à une solution Cloud intelligente intégrant le Zero Trust, le SASE et l'intelligence artificielle. Le pare-feu n'est plus un simple outil de filtrage réseau — il devient une plateforme de sécurité complète, intelligente et distribuée.</p>
+            <span class="conclusion-label"><i class="fas fa-microphone"></i> Conclusion</span>
+            <p>Ma veille montre une évolution claire et profonde : le pare-feu ne disparaît pas, mais il se transforme radicalement. On passe d'un équipement physique protégeant un réseau fixe à une solution Cloud intelligente, distribuée, basée sur l'identité et augmentée par l'intelligence artificielle. Le réseau n'est plus le centre — l'utilisateur l'est. Pour un futur technicien SISR, cette transformation signifie de nouvelles compétences à maîtriser : administrer le Cloud, gérer les identités, et travailler main dans la main avec des outils intelligents.</p>
         </div>
 
         <!-- ── 6. FLUX RSS ── -->
@@ -646,7 +635,7 @@
         <div class="contact-card reveal">
             <h2 style="font-size:2.5rem;margin-bottom:15px;">Entrons en contact.</h2>
             <div class="contact-info" style="margin-bottom:40px;">
-                <a href="mailto:ahouari.idriss@gmail.com" style="color:var(--text-light);text-decoration:none;font-size:1.4rem;font-weight:600;">ahouari.idriss@gmail.com</a>
+                <a href="/cdn-cgi/l/email-protection#34555c5b4155465d1a5d50465d4747745359555d581a575b59" style="color:var(--text-light);text-decoration:none;font-size:1.4rem;font-weight:600;"><span class="__cf_email__" data-cfemail="95f4fdfae0f4e7fcbbfcf1e7fce6e6d5f2f8f4fcf9bbf6faf8">[email&#160;protected]</span></a>
                 <div style="display:flex;justify-content:center;gap:40px;margin-top:30px;">
                     <a href="https://www.linkedin.com/in/idriss-ahouari-58541938b/" target="_blank" class="cyan-highlight" style="text-decoration:none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/ahouari-idriss" target="_blank" class="cyan-highlight" style="text-decoration:none;"><i class="fab fa-github"></i> GitHub</a>
@@ -660,7 +649,7 @@
         <p style="font-size:.8rem;color:var(--text-muted);opacity:.6;">© 2025 Idriss Ahouari. Portfolio réalisé pour le BTS SIO.</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         /* Scroll reveal */
         const revealObs = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
