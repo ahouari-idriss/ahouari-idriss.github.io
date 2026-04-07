@@ -80,6 +80,33 @@
         .reveal.visible { opacity:1; transform:translateY(0); }
 
         /* ═══════════════════════════════════════
+           TABLEAU DE SYNTHESE
+           ═══════════════════════════════════════ */
+        .synthese-table-wrapper {
+            overflow-x:auto;
+            border-radius:var(--border-radius-soft);
+            border:1px solid rgba(0,188,212,0.2);
+        }
+        .synthese-table {
+            width:100%; border-collapse:collapse; font-size:0.85rem;
+        }
+        .synthese-table thead tr {
+            background:rgba(0,188,212,0.1);
+        }
+        .synthese-table th {
+            padding:14px 16px; text-align:left;
+            color:var(--accent-cyan);
+            border-bottom:1px solid rgba(0,188,212,0.25);
+            font-weight:700; white-space:nowrap;
+        }
+        .synthese-table tbody tr:nth-child(odd)  { background:var(--bg-card); }
+        .synthese-table tbody tr:nth-child(even) { background:rgba(255,255,255,0.01); }
+        .synthese-table tbody tr { border-bottom:1px solid rgba(255,255,255,0.05); transition:background .2s; }
+        .synthese-table tbody tr:hover { background:rgba(0,188,212,0.05); }
+        .synthese-table td { padding:13px 16px; color:var(--text-muted); vertical-align:middle; }
+        .synthese-table td:first-child { color:var(--text-light); font-weight:600; }
+
+        /* ═══════════════════════════════════════
            VEILLE TECHNOLOGIQUE
            ═══════════════════════════════════════ */
         #veille-tech { padding:100px 8%; }
@@ -330,8 +357,8 @@
         <div class="logo" style="font-family:'Montserrat',sans-serif;font-size:1.5rem;">IDRISS<span class="cyan-highlight">.AHOUARI</span></div>
         <ul class="nav-links">
             <li><a href="#about">Profil</a></li>
-            <li><a href="#experience">Expérience</a></li>
             <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#veille-tech">Veille</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -379,9 +406,24 @@
                     </div>
                 </div>
                 <div class="tag-container" style="margin-top:40px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;">
-                    <span class="tag">19 ans</span><span class="tag">Champs-sur-Marne</span><span class="tag"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="67060f081206150e490e03150e141427000a060e0b4904080a">[email&#160;protected]</a></span><span class="tag">Recherche Alternance</span>
+                    <span class="tag">19 ans</span><span class="tag">Champs-sur-Marne</span><span class="tag">idriss.ahouari@example.com</span><span class="tag">Recherche Alternance</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="skills">
+        <h2 class="section-title reveal">Mes Compétences Techniques</h2>
+        <div class="grid-3">
+            <div class="card reveal"><div class="card-icon" style="color:#0078d4;"><i class="fab fa-windows"></i></div><h3>Administration Système</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Windows Server 2019/2022</li><li><i class="fas fa-check-circle cyan-highlight"></i> Active Directory, DNS, DHCP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Linux (Debian, Ubuntu, CLI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Virtualisation (VirtualBox, VMware)</li></ul><div class="tag-container"><span class="tag">Hyper-V</span><span class="tag">Bash</span><span class="tag">GPO</span><span class="tag">PowerShell</span></div></div>
+            <div class="card reveal" style="border:1px solid var(--accent-cyan);"><div class="card-icon" style="color:#4CAF50;"><i class="fas fa-network-wired"></i></div><h3>Infrastructure Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Cisco IOS (Switching &amp; Routing)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VLANs, Trunking, STP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Routage OSPF, RIP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Wireshark &amp; Packet Tracer</li></ul><div class="tag-container"><span class="tag">CCNA</span><span class="tag">TCP/IP</span><span class="tag">ACL</span><span class="tag">Radius/802.1x</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#f44336;"><i class="fas fa-shield-alt"></i></div><h3>Cyber &amp; Outils</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Pare-feu (PfSense, Stormshield)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Supervision (Zabbix, GLPI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Sauvegarde (Veeam Backup)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VPN IPsec / SSL</li></ul><div class="tag-container"><span class="tag">SecOps</span><span class="tag">ITIL</span><span class="tag">RGPD</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#ff9800;"><i class="fas fa-cloud"></i></div><h3>Cloud &amp; DevOps</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Notions Cloud (Azure, AWS)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Conteneurisation (Docker)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Versioning (Git, GitHub)</li><li><i class="fas fa-check-circle cyan-highlight"></i> CI/CD Basics</li></ul><div class="tag-container"><span class="tag">SaaS</span><span class="tag">IaaS</span><span class="tag">GitLab</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#e91e63;"><i class="fas fa-user-shield"></i></div><h3>Sécurité &amp; Hardening</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Chiffrement OpenSSL / Certificats</li><li><i class="fas fa-check-circle cyan-highlight"></i> Durcissement OS (Hardening)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Audit Nmap &amp; Nessus</li><li><i class="fas fa-check-circle cyan-highlight"></i> Gestion des logs (RSYSLOG)</li></ul><div class="tag-container"><span class="tag">PKI</span><span class="tag">Fail2Ban</span><span class="tag">SSH Sec</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#03a9f4;"><i class="fas fa-server"></i></div><h3>Services Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> DNS Bind9 &amp; Résolution</li><li><i class="fas fa-check-circle cyan-highlight"></i> Apache / Nginx / Reverse Proxy</li><li><i class="fas fa-check-circle cyan-highlight"></i> Postfix &amp; Messagerie</li><li><i class="fas fa-check-circle cyan-highlight"></i> Transferts SFTP / NFS</li></ul><div class="tag-container"><span class="tag">VirtualHost</span><span class="tag">SQL</span><span class="tag">Bind9</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#ffeb3b;"><i class="fas fa-code"></i></div><h3>Automatisation</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Scripts Bash (Linux Admin)</li><li><i class="fas fa-check-circle cyan-highlight"></i> PowerShell (Automatisation AD)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Introduction à Ansible</li><li><i class="fas fa-check-circle cyan-highlight"></i> Tâches planifiées (Cron)</li></ul><div class="tag-container"><span class="tag">YAML</span><span class="tag">Python</span><span class="tag">Scripts</span></div></div>
+            <div class="card reveal"><div class="card-icon" style="color:#9e9e9e;"><i class="fas fa-tools"></i></div><h3>Gestion &amp; Méthodes</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> OCS Inventory / Inventaire</li><li><i class="fas fa-check-circle cyan-highlight"></i> Déploiement WDS / Fog</li><li><i class="fas fa-check-circle cyan-highlight"></i> Documentation technique</li><li><i class="fas fa-check-circle cyan-highlight"></i> Ticketing &amp; Support GLPI</li></ul><div class="tag-container"><span class="tag">ITIL</span><span class="tag">WDS</span><span class="tag">Helpdesk</span></div></div>
         </div>
     </section>
 
@@ -422,21 +464,6 @@
         </div>
     </section>
 
-    <!-- COMPÉTENCES -->
-    <section id="skills">
-        <h2 class="section-title reveal">Mes Compétences Techniques</h2>
-        <div class="grid-3">
-            <div class="card reveal"><div class="card-icon" style="color:#0078d4;"><i class="fab fa-windows"></i></div><h3>Administration Système</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Windows Server 2019/2022</li><li><i class="fas fa-check-circle cyan-highlight"></i> Active Directory, DNS, DHCP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Linux (Debian, Ubuntu, CLI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Virtualisation (VirtualBox, VMware)</li></ul><div class="tag-container"><span class="tag">Hyper-V</span><span class="tag">Bash</span><span class="tag">GPO</span><span class="tag">PowerShell</span></div></div>
-            <div class="card reveal" style="border:1px solid var(--accent-cyan);"><div class="card-icon" style="color:#4CAF50;"><i class="fas fa-network-wired"></i></div><h3>Infrastructure Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Cisco IOS (Switching &amp; Routing)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VLANs, Trunking, STP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Routage OSPF, RIP</li><li><i class="fas fa-check-circle cyan-highlight"></i> Wireshark &amp; Packet Tracer</li></ul><div class="tag-container"><span class="tag">CCNA</span><span class="tag">TCP/IP</span><span class="tag">ACL</span><span class="tag">Radius/802.1x</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#f44336;"><i class="fas fa-shield-alt"></i></div><h3>Cyber &amp; Outils</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Pare-feu (PfSense, Stormshield)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Supervision (Zabbix, GLPI)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Sauvegarde (Veeam Backup)</li><li><i class="fas fa-check-circle cyan-highlight"></i> VPN IPsec / SSL</li></ul><div class="tag-container"><span class="tag">SecOps</span><span class="tag">ITIL</span><span class="tag">RGPD</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#ff9800;"><i class="fas fa-cloud"></i></div><h3>Cloud &amp; DevOps</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Notions Cloud (Azure, AWS)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Conteneurisation (Docker)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Versioning (Git, GitHub)</li><li><i class="fas fa-check-circle cyan-highlight"></i> CI/CD Basics</li></ul><div class="tag-container"><span class="tag">SaaS</span><span class="tag">IaaS</span><span class="tag">GitLab</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#e91e63;"><i class="fas fa-user-shield"></i></div><h3>Sécurité &amp; Hardening</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Chiffrement OpenSSL / Certificats</li><li><i class="fas fa-check-circle cyan-highlight"></i> Durcissement OS (Hardening)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Audit Nmap &amp; Nessus</li><li><i class="fas fa-check-circle cyan-highlight"></i> Gestion des logs (RSYSLOG)</li></ul><div class="tag-container"><span class="tag">PKI</span><span class="tag">Fail2Ban</span><span class="tag">SSH Sec</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#03a9f4;"><i class="fas fa-server"></i></div><h3>Services Réseau</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> DNS Bind9 &amp; Résolution</li><li><i class="fas fa-check-circle cyan-highlight"></i> Apache / Nginx / Reverse Proxy</li><li><i class="fas fa-check-circle cyan-highlight"></i> Postfix &amp; Messagerie</li><li><i class="fas fa-check-circle cyan-highlight"></i> Transferts SFTP / NFS</li></ul><div class="tag-container"><span class="tag">VirtualHost</span><span class="tag">SQL</span><span class="tag">Bind9</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#ffeb3b;"><i class="fas fa-code"></i></div><h3>Automatisation</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> Scripts Bash (Linux Admin)</li><li><i class="fas fa-check-circle cyan-highlight"></i> PowerShell (Automatisation AD)</li><li><i class="fas fa-check-circle cyan-highlight"></i> Introduction à Ansible</li><li><i class="fas fa-check-circle cyan-highlight"></i> Tâches planifiées (Cron)</li></ul><div class="tag-container"><span class="tag">YAML</span><span class="tag">Python</span><span class="tag">Scripts</span></div></div>
-            <div class="card reveal"><div class="card-icon" style="color:#9e9e9e;"><i class="fas fa-tools"></i></div><h3>Gestion &amp; Méthodes</h3><ul style="list-style:none;color:var(--text-muted);font-size:.9rem;margin-top:10px;"><li><i class="fas fa-check-circle cyan-highlight"></i> OCS Inventory / Inventaire</li><li><i class="fas fa-check-circle cyan-highlight"></i> Déploiement WDS / Fog</li><li><i class="fas fa-check-circle cyan-highlight"></i> Documentation technique</li><li><i class="fas fa-check-circle cyan-highlight"></i> Ticketing &amp; Support GLPI</li></ul><div class="tag-container"><span class="tag">ITIL</span><span class="tag">WDS</span><span class="tag">Helpdesk</span></div></div>
-        </div>
-    </section>
-
     <!-- PROJETS -->
     <section id="projects">
         <h2 class="section-title reveal">Projets &amp; Activités</h2>
@@ -458,6 +485,14 @@
             <div class="card reveal"><div class="project-img-container"><img src="https://i.ytimg.com/vi/xp5lJQGxQRA/maxresdefault.jpg" class="project-img" alt="DNS"></div><h3 class="cyan-highlight">Serveur DNS Bind9</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Installation et configuration d'un serveur DNS faisant autorité sous Debian avec Bind9.</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Linux</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">Bind9</span></div><a href="VPN.SNS.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Documentation</a></div>
             <div class="card reveal"><div class="project-img-container"><img src="https://anidedev.com/uploads/articles/article_68a02c75be478.png" alt="DNS"></div><h3 class="cyan-highlight">Formulaire de Contact</h3><p style="font-size:.95rem;color:var(--text-muted);margin:10px 0;">Réalisation d'un formulaire de contact fonctionnel</p><div class="tag-container" style="margin-bottom:20px;"><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">SQL</span><span class="tag" style="background:rgba(0,188,212,.1);color:var(--accent-cyan);border-color:var(--accent-cyan);">HTML</span></div><a href="formulaire.pdf" target="_blank" class="btn-primary" style="background:transparent;color:var(--accent-cyan);border:1px solid var(--accent-cyan);font-size:.8rem;padding:8px 15px;width:fit-content;">Documentation</a></div>
         </div>
+
+        <!-- ── BOUTON TABLEAU DE SYNTHÈSE ── -->
+        <div style="text-align:center;margin-top:60px;" class="reveal">
+            <a href="#tableau-synthese" class="btn-primary" style="font-size:1rem;padding:15px 40px;display:inline-flex;align-items:center;gap:12px;">
+                <i class="tableau.pdf"></i> Voir le tableau de synthèse des réalisations
+            </a>
+        </div>
+
     </section>
 
     <!-- ═══════════════════════════════════════════════
@@ -636,7 +671,7 @@
         <div class="contact-card reveal">
             <h2 style="font-size:2.5rem;margin-bottom:15px;">Entrons en contact.</h2>
             <div class="contact-info" style="margin-bottom:40px;">
-                <a href="/cdn-cgi/l/email-protection#34555c5b4155465d1a5d50465d4747745359555d581a575b59" style="color:var(--text-light);text-decoration:none;font-size:1.4rem;font-weight:600;"><span class="__cf_email__" data-cfemail="95f4fdfae0f4e7fcbbfcf1e7fce6e6d5f2f8f4fcf9bbf6faf8">[email&#160;protected]</span></a>
+                <a href="mailto:idriss.ahouari@example.com" style="color:var(--text-light);text-decoration:none;font-size:1.4rem;font-weight:600;">idriss.ahouari@example.com</a>
                 <div style="display:flex;justify-content:center;gap:40px;margin-top:30px;">
                     <a href="https://www.linkedin.com/in/idriss-ahouari-58541938b/" target="_blank" class="cyan-highlight" style="text-decoration:none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/ahouari-idriss" target="_blank" class="cyan-highlight" style="text-decoration:none;"><i class="fab fa-github"></i> GitHub</a>
@@ -650,7 +685,7 @@
         <p style="font-size:.8rem;color:var(--text-muted);opacity:.6;">© 2025 Idriss Ahouari. Portfolio réalisé pour le BTS SIO.</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         /* Scroll reveal */
         const revealObs = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
