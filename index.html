@@ -258,7 +258,7 @@
             border:1px solid rgba(0,188,212,0.2);
             border-radius:var(--border-radius-soft);
             padding:30px 35px;
-            margin-bottom:60px;
+            margin-bottom:40px;
             position:relative;
             overflow:hidden;
         }
@@ -276,6 +276,55 @@
             font-size:0.75rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
             color:var(--accent-cyan); margin-bottom:12px; display:block; font-style:normal;
         }
+
+        /* ═══════════════════════════════════════
+           BOUTON SYNTHESE VEILLE
+           ═══════════════════════════════════════ */
+        .veille-synthese-btn-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        .btn-veille-synthese {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0,188,212,0.5);
+            padding: 14px 32px;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: color .3s, border-color .3s, box-shadow .3s, transform .3s;
+        }
+        .btn-veille-synthese::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,188,212,0.08);
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .btn-veille-synthese:hover {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 18px rgba(0,188,212,0.25), inset 0 0 10px rgba(0,188,212,0.05);
+            transform: translateY(-2px);
+            color: #fff;
+        }
+        .btn-veille-synthese:hover::before { opacity: 1; }
+        .btn-veille-synthese .btn-icon {
+            font-size: 1.1rem;
+            color: var(--accent-cyan);
+            transition: transform .3s;
+        }
+        .btn-veille-synthese:hover .btn-icon { transform: scale(1.15) rotate(-5deg); }
 
         .rss-topbar {
             display:flex; align-items:center; justify-content:space-between;
@@ -334,7 +383,7 @@
             font-size:0.79rem; font-weight:600; color:var(--accent-cyan); text-decoration:none;
             display:inline-flex; align-items:center; gap:5px;
             opacity:0; transform:translateX(-4px); transition:opacity .2s,transform .2s;
-       
+        }
         .rss-card:hover .rss-card-link { opacity:1; transform:translateX(0); }
         .rss-loading-state { grid-column:1/-1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:70px 20px; gap:16px; color:var(--text-muted); }
         .rss-spinner { width:36px; height:36px; border:3px solid rgba(0,188,212,0.15); border-top-color:var(--accent-cyan); border-radius:50%; animation:spin-icon .75s linear infinite; }
@@ -642,6 +691,14 @@
         <div class="veille-conclusion reveal">
             <span class="conclusion-label"><i class="fas fa-microphone"></i> Conclusion</span>
             <p>Ma veille montre une évolution claire et profonde : le pare-feu ne disparaît pas, mais il se transforme radicalement. On passe d'un équipement physique protégeant un réseau fixe à une solution Cloud intelligente, distribuée, basée sur l'identité et augmentée par l'intelligence artificielle. Le réseau n'est plus le centre — l'utilisateur l'est. Pour un futur technicien SISR, cette transformation signifie de nouvelles compétences à maîtriser : administrer le Cloud, gérer les identités, et travailler main dans la main avec des outils intelligents.</p>
+        </div>
+
+        <!-- ── BOUTON SYNTHÈSE VEILLE (NOUVEAU) ── -->
+        <div class="veille-synthese-btn-wrapper reveal">
+            <a href="SYNTHESE-VEILLE.pdf" target="_blank" class="btn-veille-synthese">
+                <i class="fas fa-file-pdf btn-icon"></i>
+                Voir la synthèse de veille
+            </a>
         </div>
 
         <!-- ── 6. FLUX RSS ── -->
